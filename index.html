@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+           .container{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 150px;
+         }
+           button{
+               margin: .6em;
+          }
+          label{
+               margin: .2em;
+          }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+           
+            <div class="tab tab-2">
+                <label for="fname">Name:<input type="text" name="fname" id="fname"></div></label>
+                <label for="tname">Type:<input type="text" name="tname" id="tname"></label>
+                <label for="cname"></label>Color:<input type="color" name="cname" id="cname"></label>
+                
+                <button type="button" class="btn btn-primary" onclick="addHtmlTableRow();">Add</button>
+                <button  type="button"  class="btn btn-success" onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button  type="button"  class="btn btn-danger" onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" class="table-bordered">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Color</th>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>A3</td>
+                        <td>B3</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>B2</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
